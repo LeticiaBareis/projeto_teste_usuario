@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Lista de usuários</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Usuário</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarUsuario">Cadastrar Usuário</button>
+        <table id="tableUser" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Adicionar Usuário</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input  type="text" id="nome" data-index="new" class="modal-field" maxlength="150" placeholder="Nome" required>
+                    <input type="email" id="email" class="modal-field" maxlength="20" placeholder="e-mail" required>
+                    <input type="password" id="senha"  class="modal-field" placeholder="Senha" maxlength="8" required>
+                    <label for="status">Status:</label>
+                        <select name="status" id="status" requered>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                        </select>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+       Letícia Reis
+    </footer>
+</body>
+</html>
