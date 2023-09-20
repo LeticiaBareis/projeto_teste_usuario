@@ -13,5 +13,5 @@ No desenvolvimento do projeto foi utilizado:
 * Editar e Excluir usuários existentes;
 
 ## Como visualizar sistema teste:
-1. Faça o clone deste repositório em um diretorio; 
-2. Abra somente o arquivo index.html em qualquer navegador.
+1. Faça o clone deste repositório em um diretório; 
+2. Abra somente o arquivo **index.html** em qualquer navegador.
